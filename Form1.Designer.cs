@@ -30,7 +30,6 @@ namespace FaceRecognitionAttendanceSystem
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pbVideoBox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cbCameraList = new System.Windows.Forms.ComboBox();
@@ -39,16 +38,17 @@ namespace FaceRecognitionAttendanceSystem
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.generateQrCode = new System.Windows.Forms.Button();
             this.tbQrCodeResult = new System.Windows.Forms.TextBox();
+            this.btnStopScanner = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbVideoBox)).BeginInit();
             this.SuspendLayout();
             // 
             // pbVideoBox
             // 
-            this.pbVideoBox.Image = ((System.Drawing.Image)(resources.GetObject("pbVideoBox.Image")));
+            this.pbVideoBox.Image = global::QrCode_Reader_And_Generator_C_Sharp.Properties.Resources.scanner;
             this.pbVideoBox.Location = new System.Drawing.Point(21, 12);
             this.pbVideoBox.Name = "pbVideoBox";
             this.pbVideoBox.Size = new System.Drawing.Size(446, 267);
-            this.pbVideoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbVideoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbVideoBox.TabIndex = 0;
             this.pbVideoBox.TabStop = false;
             // 
@@ -75,11 +75,11 @@ namespace FaceRecognitionAttendanceSystem
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(495, 12);
+            this.label2.Location = new System.Drawing.Point(473, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 24);
+            this.label2.Size = new System.Drawing.Size(149, 24);
             this.label2.TabIndex = 3;
-            this.label2.Text = "UserInfo:";
+            this.label2.Text = "Scanned Data:";
             // 
             // btnScanQrCode
             // 
@@ -88,7 +88,7 @@ namespace FaceRecognitionAttendanceSystem
             this.btnScanQrCode.Name = "btnScanQrCode";
             this.btnScanQrCode.Size = new System.Drawing.Size(219, 31);
             this.btnScanQrCode.TabIndex = 5;
-            this.btnScanQrCode.Text = "Scan QrCode";
+            this.btnScanQrCode.Text = "Start Scanner";
             this.btnScanQrCode.UseVisualStyleBackColor = true;
             this.btnScanQrCode.Click += new System.EventHandler(this.btnScanQrCode_Click);
             // 
@@ -110,17 +110,29 @@ namespace FaceRecognitionAttendanceSystem
             // 
             // tbQrCodeResult
             // 
-            this.tbQrCodeResult.Location = new System.Drawing.Point(597, 12);
+            this.tbQrCodeResult.Location = new System.Drawing.Point(619, 13);
             this.tbQrCodeResult.Multiline = true;
             this.tbQrCodeResult.Name = "tbQrCodeResult";
             this.tbQrCodeResult.Size = new System.Drawing.Size(314, 114);
             this.tbQrCodeResult.TabIndex = 7;
+            // 
+            // btnStopScanner
+            // 
+            this.btnStopScanner.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnStopScanner.Location = new System.Drawing.Point(739, 133);
+            this.btnStopScanner.Name = "btnStopScanner";
+            this.btnStopScanner.Size = new System.Drawing.Size(172, 30);
+            this.btnStopScanner.TabIndex = 8;
+            this.btnStopScanner.Text = "Stop Scanner";
+            this.btnStopScanner.UseVisualStyleBackColor = true;
+            this.btnStopScanner.Click += new System.EventHandler(this.btnStopScanner_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 380);
+            this.Controls.Add(this.btnStopScanner);
             this.Controls.Add(this.tbQrCodeResult);
             this.Controls.Add(this.generateQrCode);
             this.Controls.Add(this.btnScanQrCode);
@@ -149,6 +161,7 @@ namespace FaceRecognitionAttendanceSystem
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button generateQrCode;
         private System.Windows.Forms.TextBox tbQrCodeResult;
+        private System.Windows.Forms.Button btnStopScanner;
     }
 }
 

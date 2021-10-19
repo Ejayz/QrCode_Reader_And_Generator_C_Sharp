@@ -2,8 +2,8 @@
 using System;
 using System.Windows.Forms;
 using ZXing;
-using AForge;
 using System.Drawing;
+using QrCode_Reader_And_Generator_C_Sharp.Properties;
 
 namespace FaceRecognitionAttendanceSystem
 {
@@ -72,6 +72,16 @@ namespace FaceRecognitionAttendanceSystem
         private void generateQrCode_Click(object sender, EventArgs e)
         {
             new generateQrCodeForm().Show();
+        }
+
+        private void btnStopScanner_Click(object sender, EventArgs e)
+        {
+            if (captureDevice.IsRunning == true)
+            {
+                timer1.Stop();
+                pbVideoBox.Image = Resources.scanner;   
+                captureDevice.SignalToStop();
+            }
         }
     }
 }

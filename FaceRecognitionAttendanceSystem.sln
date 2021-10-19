@@ -5,21 +5,39 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QrCode_Reader_And_Generator_C_Sharp", "QrCode_Reader_And_Generator_C_Sharp.csproj", "{EE020519-AEBF-4AFD-B0A6-90B577EAB784}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "QrCode Reader And Generator", "..\QrCode Reader And Generator\QrCode Reader And Generator.vdproj", "{353D58F6-E983-4A8A-983E-07D3AD6C155F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
 		Release|Any CPU = Release|Any CPU
+		Release|Default = Release|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{EE020519-AEBF-4AFD-B0A6-90B577EAB784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EE020519-AEBF-4AFD-B0A6-90B577EAB784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE020519-AEBF-4AFD-B0A6-90B577EAB784}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{EE020519-AEBF-4AFD-B0A6-90B577EAB784}.Debug|Default.Build.0 = Debug|Any CPU
 		{EE020519-AEBF-4AFD-B0A6-90B577EAB784}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE020519-AEBF-4AFD-B0A6-90B577EAB784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE020519-AEBF-4AFD-B0A6-90B577EAB784}.Release|Default.ActiveCfg = Release|Any CPU
+		{EE020519-AEBF-4AFD-B0A6-90B577EAB784}.Release|Default.Build.0 = Release|Any CPU
+		{353D58F6-E983-4A8A-983E-07D3AD6C155F}.Debug|Any CPU.ActiveCfg = Debug
+		{353D58F6-E983-4A8A-983E-07D3AD6C155F}.Debug|Default.ActiveCfg = Debug
+		{353D58F6-E983-4A8A-983E-07D3AD6C155F}.Debug|Default.Build.0 = Debug
+		{353D58F6-E983-4A8A-983E-07D3AD6C155F}.Release|Any CPU.ActiveCfg = Release
+		{353D58F6-E983-4A8A-983E-07D3AD6C155F}.Release|Default.ActiveCfg = Release
+		{353D58F6-E983-4A8A-983E-07D3AD6C155F}.Release|Default.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F6BEA5D-3305-4727-8E70-DC52E50613A8}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 EndGlobal
