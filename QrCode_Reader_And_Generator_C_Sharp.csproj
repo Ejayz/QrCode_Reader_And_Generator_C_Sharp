@@ -4,6 +4,8 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>QrCode_Reader_And_Generator_C_Sharp</AssemblyName>
+    <RootNamespace>QrCode_Reader_And_Generator_C_Sharp</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

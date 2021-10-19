@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FaceRecognitionAttendanceSystem.Properties {
+namespace QrCode_Reader_And_Generator_C_Sharp.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace FaceRecognitionAttendanceSystem.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FaceRecognitionAttendanceSystem.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("QrCode_Reader_And_Generator_C_Sharp.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

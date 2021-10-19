@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceRecognitionAttendanceSystem", "FaceRecognitionAttendanceSystem.csproj", "{EE020519-AEBF-4AFD-B0A6-90B577EAB784}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QrCode_Reader_And_Generator_C_Sharp", "QrCode_Reader_And_Generator_C_Sharp.csproj", "{EE020519-AEBF-4AFD-B0A6-90B577EAB784}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
